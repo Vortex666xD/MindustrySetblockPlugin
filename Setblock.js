@@ -2,6 +2,15 @@ let blockplaced = "";
 
 let choosedTeam = "";
 
+const teamMenuTitle = "Setblock";
+  const teamMenuText = "\n Choose a team \n";
+
+  const teamMenuButtons = [
+    ["[stat]", "[red]"],
+    ["[#c34aff]", "[green]"],
+    ["[blue]","[grey]"],
+    ["[green] Close"],
+  ];
 
   const setblockMain = (player, option) => {
 
@@ -1949,6 +1958,12 @@ let choosedTeam = "";
     }
     if (option === 4){
       choosedTeam = "blue";
+      p.setblock = true;
+      return;
+    }
+    
+    if (option === 5){
+      choosedTeam = "derelict";
       p.setblock = true;
       return;
     }
